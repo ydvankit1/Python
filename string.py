@@ -101,13 +101,14 @@
 
 # Docstring
 
-# def square(n):
-#     '''
-#     Takes number n, return the square of n  // always written before print statement in function body
-#     '''
-#     print(n**2);
-# square(5);
-# print(square.__doc__); // print the docstring
+def square(n):
+    '''
+    Takes number n, return the square of n  
+    '''
+    # above docstring always written before print statement in function body
+    print(n**2);
+square(5);
+print(square.__doc__);  #print the docstring
 
 
 

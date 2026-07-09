@@ -15,5 +15,5 @@ match x:
         print("its 4");
     case _ if x!=90:
         print(x is not 90)
-    case _:
+    case _:                  # default case
         print(x);

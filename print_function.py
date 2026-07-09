@@ -36,9 +36,9 @@
 
 # implicit typecasting 
 
-# c=1.1
-# d=4
-# print(c+d) //5.1 
+c=1.1
+d=4
+print(c+d)   #5.1 
 
 
 

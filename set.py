@@ -7,12 +7,12 @@
 
 # set function
 
-# s1={1,2,5,6};
-# s2={3,6,7};
-# print(s1.union(s2)); // similarly intersection, difference
-# print(s1,s2);
-# s1.update(s2);  // s1 get updated  1,2,3,5,6,7
-# print(s1,s2);
+s1={1,2,5,6};
+s2={3,6,7};
+print(s1.union(s2)); # similarly intersection, difference
+print(s1,s2);
+s1.update(s2);  # s1 get updated  1,2,3,5,6,7
+print(s1,s2);
 
 # print(s1.isdisjoint(s2)) // true if no entry common
 

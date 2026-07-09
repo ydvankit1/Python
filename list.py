@@ -24,14 +24,14 @@
 # lst=[i*i for i in range(4) if i%2==0];
 # print(lst);  // 0,4
 
-# l=[2, 6, 8, 9,6, 8,6];
-# l.append(13);
-# l.sort();
-# l.sort(reverse=true);
-# print(l.index(1));
-# print(l.count(6));
-# m=l; // reference of l change to m
-# m.insert(1, 55) // index, value
-# l.extend(m) // add list m to end of l 
-# k=l+m; // concatenate l and m
+l=[2, 6, 8, 9,6, 8,6];
+l.append(13);
+l.sort();
+l.sort(reverse=True);
+print(l.index(1));
+print(l.count(6));
+m=l; # reference of l change to m
+m.insert(1, 55)  #index, value
+l.extend(m) # add list m to end of l 
+k=l+m; # concatenate l and m
 

@@ -16,8 +16,8 @@
 # for k in range(1,5): // 1 to 4
 #     print(k); 
 
-# for k in range(1,5,2): // 1 3 5
-#     print(k); 
+for k in range(1,5,2): # 1 3 5
+    print(k); 
 
 
 # i=0;
