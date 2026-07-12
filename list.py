@@ -18,11 +18,6 @@
 
 # print(l[0,2,2]) //3,"true"
 
-# lst=[i*i for i in range(4)];
-# print(lst);  // 0,1,4,9
- 
-# lst=[i*i for i in range(4) if i%2==0];
-# print(lst);  // 0,4
 
 l=[2, 6, 8, 9,6, 8,6];
 l.append(13);

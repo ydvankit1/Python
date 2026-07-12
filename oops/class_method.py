@@ -1,15 +1,17 @@
-class employee:
-    company="apple"
-    def show(self):
-        print(f"the name is {self.name} and company is {self.company}")
+class Student:
+    school = "ABC School"
+
+    def __init__(self, name):
+        self.name = name
 
     @classmethod
-    def changeCompany(self, newCompany):
-        self.company=newCompany
+    def change_school(cls, new_school):  # cls refer to the class student
+        cls.school = new_school
 
-obj1 =employee()
-obj1.name="ankit"
-obj1.show()
-obj1.changeCompany("Tesla")
-obj1.show()
+# Before change
+print(Student.school)
 
+# Change class variable
+Student.change_school("XYZ School")
+
+print(Student.school)

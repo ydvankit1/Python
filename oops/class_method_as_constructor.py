@@ -3,12 +3,12 @@ class employee:
         self.name=name
         self.salary=salary
 
-    @classmethod
-    def formStr(self, str):
-        return self(str.split("-")[0],int(str.split("-")[1]))
-
+    @classmethod      # no use of self 
+    def formStr(cls, str):
+        name, salary = str.split("-")
+        return cls(name, int(salary))
+    
 str="ankit-100000"
-# obj=employee(str.split("-")[0],str.split("-")[1])
 obj=employee.formStr(str)
 
 print(obj.name)

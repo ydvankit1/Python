@@ -15,4 +15,4 @@ greet(hello)()
 # O/p-
 # Good Morning
 # Hello World
-# Thanks for using this function
+# Thanks for using this function 

@@ -15,7 +15,7 @@
 
 
 
-# take tuple in arguments
+# take tuple in arguments  
 
 # def avg(* no):
 #     sm=0;
@@ -35,11 +35,55 @@
 # name(fname="Ankit", lname="Yadav");
 
 
-# enumerate function
+# def order(var=[]):
+#     var.append("Masala")
+#     print(var)
 
-marks = [12, 56, 32, 98, 12, 45];
-for idx, mark in enumerate(marks):
-    print(mark);
-    if(idx==3):
-        print("harry")
-    idx+=1;
+# order()
+
+# returning multiple value
+
+# def fn():
+#     return 100, 200, 300
+
+# a, b, c = fn()
+# print(a, b, c)
+
+
+# variable scoping in function
+
+def fn():   # pure function
+    var= "lemon"  # enclosing
+    def order():
+        var="ginger"   # innner
+        print("Inner: ",var)
+    order()
+    print("outer: ",var)
+
+var="Tulsi" # global
+fn()
+print("global: ",var)
+
+
+
+def fn():
+    var="eliachi"
+    def update():
+        nonlocal var  # nonlocal update enclosing variable
+        var="kesar"
+    update()
+    print("after update", var)
+
+fn()
+
+
+var= "plain"
+
+def fn():
+    def update():   # impure function
+        global var   # update global variable
+        var="Irani"
+    update()
+
+fn()
+print("after update: ", var)
